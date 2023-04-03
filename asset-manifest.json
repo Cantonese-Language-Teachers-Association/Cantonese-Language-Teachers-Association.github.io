@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "//cantonese-language-teachers-association.github.io/static/css/main.073c9b0a.css",
-    "main.js": "//cantonese-language-teachers-association.github.io/static/js/main.f2dc79be.js",
-    "static/js/787.235d59b1.chunk.js": "//cantonese-language-teachers-association.github.io/static/js/787.235d59b1.chunk.js",
-    "static/media/logo.svg": "//cantonese-language-teachers-association.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "//cantonese-language-teachers-association.github.io/index.html",
-    "main.073c9b0a.css.map": "//cantonese-language-teachers-association.github.io/static/css/main.073c9b0a.css.map",
-    "main.f2dc79be.js.map": "//cantonese-language-teachers-association.github.io/static/js/main.f2dc79be.js.map",
-    "787.235d59b1.chunk.js.map": "//cantonese-language-teachers-association.github.io/static/js/787.235d59b1.chunk.js.map"
+    "main.css": "/static/css/main.d3be26e3.css",
+    "main.js": "/static/js/main.0cf1ed6d.js",
+    "index.html": "/index.html",
+    "main.d3be26e3.css.map": "/static/css/main.d3be26e3.css.map",
+    "main.0cf1ed6d.js.map": "/static/js/main.0cf1ed6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f2dc79be.js"
+    "static/css/main.d3be26e3.css",
+    "static/js/main.0cf1ed6d.js"
   ]
 }
