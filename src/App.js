@@ -1,58 +1,53 @@
-import React, { useState } from 'react';
-
-//import Navbar from './components/Navbar'
+import React from 'react';
+import Grid from './components/grid'
 //import logo from './assets/logo.png';
+
+//our inspiration: https://www.w3schools.com/howto/howto_css_dropdown.asp
 
 function App() {
   return (
-    <div>
-      <Navbar>
-        <NavItem icon='hello'>
-          <DropdownMenu/>
-        </NavItem>
-      </Navbar>
-      <h1>CantoLTA</h1>
+    <div className='App'>
+      <Navbar/>
+      <Grid />
     </div>
   );
 }
 
-function Navbar(props) {
+function Navbar() {
   return (
-    <nav className='navbar'>
-      <ul className='navbar-nav'> { props.children } </ul>
-    </nav>
-  )
-}
-
-function NavItem(props) {
-  const [open, setOpen] = useState(false);
-  return (
-    <li className='nav-item'>
-      <a href="#" className='icon-button' onClick={() => setOpen(!open)}>
-        {props.icon}
-      </a>
-      {open && props.children}
-    </li>
-  )
-}
-
-function DropdownMenu() {
-
-  function DropdownItem(props) {
-    return (
-      <a href='#' className='menu-item'>
-        <span className='icon-button'>{props.leftIcon}</span>
-        {props.children}
-        <span className='icon-right'>{props.rightIcon}</span>
-      </a>
-    )
-  }
-
-  return (
-    <div className='dropdown'>
-      <DropdownItem>hi there</DropdownItem>
+    <div className='navbar'>
+      <NavItemSingle path='#'>ABOUT</NavItemSingle>
+      <NavItemSingle path='#'>PROGRAMS</NavItemSingle>
+      <NavItemSingle path='#'>RESOURCES</NavItemSingle>
+      <NavItemSingle path='#'>EVENTS</NavItemSingle>
+      <NavItemSingle path='#'>DIRECTORY</NavItemSingle>
+      <NavItemSingle path='#'>DONATE</NavItemSingle>
     </div>
-  )
+  );
+}
+
+function NavItemSingle(props) {
+  return (
+    <div className='nav-item-single'>
+      <a className='single-btn' href={props.path}>{props.children}</a>
+    </div>
+  );
+}
+
+function NavItemDrop(props) {
+  return (
+    <div className='nav-item-drop'>
+      <a className='drop-btn' href={props.path}>{props.children}</a>
+      <div className='dropdown-content'>
+        <a href='#'>element1</a>
+        <a href='#'>element2</a>
+        <a href='#'>element3</a>
+        <a href='#'>element4</a>
+        <a href='#'>element5</a>
+        <a href='#'>element6</a>
+      </div>
+    </div>
+  );
 }
 
 export default App;
