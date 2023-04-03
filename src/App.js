@@ -2,7 +2,11 @@ import React from 'react';
 import Grid from './components/grid'
 //import logo from './assets/logo.png';
 
-//our inspiration: https://www.w3schools.com/howto/howto_css_dropdown.asp
+//references:
+//https://www.w3schools.com/howto/howto_css_dropdown.asp
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+//https://www.w3schools.com/css/css_grid_container.asp
+//https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-rows
 
 function App() {
   return (
