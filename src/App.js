@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from './components/Navbar'
 //import logo from './assets/logo.png';
 
 function App() {
   return (
     <div>
+      <Navbar></Navbar>
       <h1>CLTA</h1>
     </div>
   );
