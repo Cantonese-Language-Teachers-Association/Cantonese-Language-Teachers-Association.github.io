@@ -1,7 +1,27 @@
 
 :root {
+  --bg-color: #242526; /*#f6e3bd*/
+  /*--bg-accent: ;*/
   --logo-color: #193727;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* bootstrap stuff:
 
 body {
   margin: 0;
@@ -24,11 +44,11 @@ code {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  /*filter: invert(1);*/
+  filter: invert(1);
 }
 
 .App-header {
-  background-color: #f6e3bd;
+  background-color: var(--bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,3 +61,4 @@ code {
 .App-link {
   color: #61dafb;
 }
+*/
